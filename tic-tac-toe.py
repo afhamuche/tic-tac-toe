@@ -2,9 +2,9 @@
 Documentation, License etc.
 
 Tic-Tac-Toe by Alessandro Hamuche
-v1.0-Beta
+v1.1-Beta
 Created: 11/20/2021
-Modified: not modified
+Modified: 11/22/2021
 
 @package tictac
 '''
