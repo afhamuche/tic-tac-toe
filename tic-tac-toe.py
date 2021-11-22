@@ -17,6 +17,19 @@ Modified: not modified
 # 100100100 <- |..
 # 001001001 <- ..|
 
+from os import system, name
+from time import sleep
+
+# sleep(1) lags
+# clear n of N==
+def clear():
+    #windows?
+    if name=='nt':
+        _=system('cls')
+    #unix based
+    else:
+        _=system('clear')
+
 game=True
 count=0
 list_converted=[0, 0, 0, 0, 0, 0, 0, 0, 0]
@@ -42,6 +55,7 @@ def list_convert(alist):
             blist.append(0)
     return blist
 
+clear()
 tictac=["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
 print(str(tictac[0:3]) + "\n" + str(tictac[3:6]) + "\n" + str(tictac[6:9]))
@@ -64,6 +78,7 @@ while game:
             if (x_in==tictac[x]):
                 tictac[x]=player
                 check=False
+                clear()
                 print(str(tictac[0:3]) + "\n" + str(tictac[3:6]) + "\n" + str(tictac[6:9]))
 
         if check:
